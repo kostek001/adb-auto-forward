@@ -6,7 +6,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser(
-    prog="ADB Auto Forward", description="Automatically forward ports using ADB on device connection")
+    prog="ADB Auto Forward", description="Automatically forward TCP ports using ADB on device connection")
 parser.add_argument('device_conf', nargs='+',
                     help='an device \'idVendor:idProduct\' + ports(one or more), divided by \',\' example: 2833:0183,9943,9944')
 args = parser.parse_args()
