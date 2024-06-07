@@ -3,6 +3,7 @@
 import os
 import pyudev
 import argparse
+import signal
 
 
 parser = argparse.ArgumentParser(
@@ -69,10 +70,6 @@ observer.start()
 
 os.system("adb start-server")
 
-try:
-    while True:
-        pass
-except KeyboardInterrupt:
-    pass
+signal.pause()
 
 exit()
